@@ -1,0 +1,29 @@
+{
+  "_comment": "Deterministic demo eligibility. Not real connector coverage.",
+  "defaults": {
+    "currencies": ["AUD", "CAD", "EUR", "GBP", "JPY", "NZD", "SGD", "USD"],
+    "transaction_types": ["deposit", "withdrawal"]
+  },
+  "routes": {
+    "adyen": {},
+    "checkout": {},
+    "stripe": {},
+    "worldpay": {},
+    "square": {
+      "currencies": ["USD", "CAD", "AUD", "GBP"],
+      "transaction_types": ["deposit"],
+      "deny_reason": "Square is limited to USD/CAD/AUD/GBP deposits in this demo config"
+    },
+    "paypal": {
+      "withdrawal_currencies": ["USD", "EUR", "GBP"],
+      "max_amount": 10000,
+      "deny_reason": "PayPal withdrawals are USD/EUR/GBP only and deposits cap at 10,000 in this demo config"
+    },
+    "revolut_pay": {
+      "currencies": ["EUR", "GBP", "USD", "AUD", "NZD", "SGD"],
+      "deny_reason": "Revolut Pay does not accept JPY or CAD in this demo config"
+    },
+    "wise": {},
+    "bank_transfer": {}
+  }
+}

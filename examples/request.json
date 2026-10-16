@@ -1,0 +1,10 @@
+{
+  "transaction_type": "deposit",
+  "amount": 8200,
+  "currency": "USD",
+  "local_currency": "EUR",
+  "country": "United States",
+  "ip_country": "Germany",
+  "is_cross_border": true,
+  "policy": "balanced"
+}

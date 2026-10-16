@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+html, body, [class*="css"] {
+  font-family: "Outfit", "Segoe UI", sans-serif;
+}
+
+.stApp {
+  background:
+    radial-gradient(1200px 500px at 12% -10%, rgba(62, 224, 180, 0.10), transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, rgba(92, 124, 250, 0.10), transparent 50%),
+    #0b0f14;
+}
+
+[data-testid="stHeader"],
+[data-testid="stToolbar"],
+.stDeployButton,
+#MainMenu,
+footer {
+  display: none !important;
+}
+
+[data-testid="stSidebar"] {
+  background: #0a0e13 !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+[data-testid="stSidebar"] > div:first-child {
+  padding-top: 1.25rem;
+}
+
+.block-container {
+  padding-top: 1.4rem !important;
+  padding-bottom: 3rem !important;
+  max-width: 1180px;
+}
+
+.dpo-brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.dpo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, #3ee0b4 0%, #5c7cfa 100%);
+  box-shadow: 0 8px 24px rgba(62, 224, 180, 0.25);
+}
+
+.dpo-brand-name {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+  color: #f4f7fb;
+  line-height: 1.1;
+}
+
+.dpo-brand-sub {
+  font-size: 0.72rem;
+  color: #8b9aab;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dpo-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(62, 224, 180, 0.08);
+  border: 1px solid rgba(62, 224, 180, 0.22);
+  color: #9af3d6;
+  font-size: 0.78rem;
+  margin-bottom: 1rem;
+}
+
+.dpo-chip-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 99px;
+  background: #3ee0b4;
+  box-shadow: 0 0 0 4px rgba(62, 224, 180, 0.15);
+}
+
+.dpo-navhint {
+  color: #8b9aab;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.dpo-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.dpo-kicker {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8b9aab;
+  margin-bottom: 0.35rem;
+}
+
+.dpo-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 2.05rem;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #f7fafc;
+  margin: 0;
+}
+
+.dpo-lede {
+  color: #9aa8b8;
+  max-width: 36rem;
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+}
+
+.dpo-banner {
+  border: 1px solid rgba(232, 192, 125, 0.28);
+  background: rgba(232, 192, 125, 0.08);
+  color: #ead7b0;
+  border-radius: 12px;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.82rem;
+  margin-bottom: 1.1rem;
+}
+
+.dpo-card {
+  background: rgba(19, 26, 34, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 1.1rem 1.15rem 1.2rem;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(10px);
+}
+
+.dpo-card h3 {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8b9aab;
+  margin: 0 0 0.85rem;
+  font-weight: 600;
+}
+
+.dpo-winner {
+  position: relative;
+  overflow: hidden;
+}
+
+.dpo-winner::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(#3ee0b4, #5c7cfa);
+}
+
+.dpo-winner-name {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 2.3rem;
+  letter-spacing: -0.04em;
+  margin: 0.15rem 0 0.35rem;
+  color: #f7fafc;
+}
+
+.dpo-winner-why {
+  color: #b7c4d2;
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+}
+
+.dpo-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.dpo-stat {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 0.7rem 0.75rem;
+}
+
+.dpo-stat span {
+  display: block;
+  color: #8b9aab;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dpo-stat strong {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #e8eef4;
+}
+
+.dpo-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+
+.dpo-pill {
+  font-size: 0.75rem;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(92, 124, 250, 0.12);
+  border: 1px solid rgba(92, 124, 250, 0.22);
+  color: #c5ceff;
+}
+
+.dpo-row {
+  padding: 0.62rem 0.15rem 0.55rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.86rem;
+}
+
+.dpo-row-main {
+  display: grid;
+  grid-template-columns: 28px 1fr 76px 76px 84px;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.dpo-row.head {
+  color: #8b9aab;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.45rem;
+}
+
+.dpo-row.top .dpo-name {
+  color: #3ee0b4;
+}
+
+.dpo-rank {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: #8b9aab;
+}
+
+.dpo-name {
+  font-weight: 500;
+}
+
+.dpo-bar {
+  height: 5px;
+  margin-top: 0.38rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.dpo-fill {
+  display: block;
+  height: 100%;
+  width: var(--w, 0%);
+  background: linear-gradient(90deg, #3ee0b4, #5c7cfa);
+  border-radius: 99px;
+}
+
+.dpo-mono {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.78rem;
+  color: #c9d4e0;
+  text-align: right;
+}
+
+.dpo-muted {
+  color: #8b9aab;
+  font-size: 0.84rem;
+}
+
+.dpo-ineligible {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.84rem;
+}
+
+.dpo-ineligible b {
+  color: #f0b4b8;
+  font-weight: 500;
+}
+
+.dpo-policy {
+  min-height: 168px;
+}
+
+.dpo-policy .dpo-stats,
+.dpo-policy .dpo-stat + .dpo-stat {
+  margin-top: 0.4rem;
+}
+
+.dpo-policy .dpo-stat {
+  margin-top: 0.4rem;
+}
+
+.dpo-policy .label {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8b9aab;
+}
+
+.dpo-policy .pick {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.45rem;
+  margin: 0.35rem 0 0.7rem;
+  letter-spacing: -0.03em;
+}
+
+.dpo-grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+@media (max-width: 980px) {
+  .dpo-row-main {
+    grid-template-columns: 24px 1fr 72px;
+  }
+  .dpo-row-main .dpo-mono:nth-child(n+4) {
+    display: none;
+  }
+  .dpo-grid4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+div[data-testid="stMetric"] {
+  background: rgba(19, 26, 34, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 0.7rem 0.8rem;
+}
+
+div[data-testid="stMetricValue"] {
+  font-family: "Fraunces", Georgia, serif;
+}
+
+.stButton > button {
+  border-radius: 999px !important;
+  font-weight: 600 !important;
+  padding: 0.45rem 1.1rem !important;
+}

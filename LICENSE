@@ -1,0 +1,7 @@
+This project is licensed under the GNU General Public License v3.0.
+
+It uses the PayMind reference dataset (GPL-3.0) from
+https://huggingface.co/datasets/navk8690/paymind-reference-data
+
+Full license text: https://www.gnu.org/licenses/gpl-3.0.en.html
+SPDX-License-Identifier: GPL-3.0-only

@@ -1,0 +1,32 @@
+{
+  "policies": {
+    "balanced": {
+      "success": 0.40,
+      "fee": 0.25,
+      "settlement": 0.25,
+      "relevance": 0.10
+    },
+    "cost": {
+      "success": 0.20,
+      "fee": 0.55,
+      "settlement": 0.15,
+      "relevance": 0.10
+    },
+    "speed": {
+      "success": 0.25,
+      "fee": 0.10,
+      "settlement": 0.55,
+      "relevance": 0.10
+    },
+    "approval": {
+      "success": 0.70,
+      "fee": 0.05,
+      "settlement": 0.15,
+      "relevance": 0.10
+    }
+  },
+  "fee_rate_cap": 0.05,
+  "settlement_cap_minutes": 1440,
+  "cascade_size": 3,
+  "fallback_success_threshold": 0.88
+}

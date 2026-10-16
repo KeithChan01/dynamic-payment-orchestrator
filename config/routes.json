@@ -1,0 +1,25 @@
+{
+  "routes": [
+    { "id": "adyen", "label": "Adyen", "kind": "processor" },
+    { "id": "checkout", "label": "Checkout.com", "kind": "processor" },
+    { "id": "stripe", "label": "Stripe", "kind": "processor" },
+    { "id": "worldpay", "label": "Worldpay", "kind": "processor" },
+    { "id": "square", "label": "Square", "kind": "processor" },
+    { "id": "paypal", "label": "PayPal", "kind": "wallet" },
+    { "id": "revolut_pay", "label": "Revolut Pay", "kind": "wallet" },
+    { "id": "wise", "label": "Wise", "kind": "fx" },
+    { "id": "bank_transfer", "label": "Bank transfer", "kind": "bank" }
+  ],
+  "currencies": ["AUD", "CAD", "EUR", "GBP", "JPY", "NZD", "SGD", "USD"],
+  "countries": [
+    "Australia",
+    "Canada",
+    "Germany",
+    "Japan",
+    "New Zealand",
+    "Singapore",
+    "United Kingdom",
+    "United States"
+  ],
+  "transaction_types": ["deposit", "withdrawal"]
+}

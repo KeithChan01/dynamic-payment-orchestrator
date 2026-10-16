@@ -1,0 +1,15 @@
+{
+  "_comment": "Empirical priors from the synthetic PayMind reference set. Not real PSP performance.",
+  "overall_success": 0.915,
+  "routes": {
+    "adyen": { "success": 0.935, "p50": 0.15, "p90": 9.24, "share": 0.122 },
+    "checkout": { "success": 0.919, "p50": 0.21, "p90": 2.95, "share": 0.134 },
+    "stripe": { "success": 0.927, "p50": 0.17, "p90": 1.28, "share": 0.120 },
+    "worldpay": { "success": 0.900, "p50": 0.26, "p90": 7.67, "share": 0.118 },
+    "square": { "success": 0.888, "p50": 0.16, "p90": 1.74, "share": 0.065 },
+    "paypal": { "success": 0.888, "p50": 0.15, "p90": 10.23, "share": 0.109 },
+    "revolut_pay": { "success": 0.925, "p50": 1.60, "p90": 38.31, "share": 0.097 },
+    "wise": { "success": 0.914, "p50": 13.58, "p90": 313.80, "share": 0.117 },
+    "bank_transfer": { "success": 0.927, "p50": 239.55, "p90": 1860.12, "share": 0.117 }
+  }
+}
